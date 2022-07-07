@@ -1,3 +1,7 @@
+//Write a program where you define some variable or data types and print its memory allocation.
+
+
+
 #include <iostream>
 using namespace std;
 
