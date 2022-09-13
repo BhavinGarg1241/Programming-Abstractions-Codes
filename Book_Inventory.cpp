@@ -87,12 +87,11 @@ void Book_Inventory::search_book(){
 		cout<<"Enter author name to be searched : ";
 		cin>>author;
 		file >> book_name >> author_name >> cost >>stock;
-		
+		system("cls");
+		cout<<setiosflags(ios::right)<<setw(20)<<"Search Books"<<endl<<endl;
+		cout<<left<<setw(20)<<"Book"<<left<<setw(20)<<"Author"<<left<<setw(15)<<"Cost"<<left<<setw(15)<<"No. of Copies"<<endl<<endl;
 		while(!file.eof()){
 			if(book==book_name && author==author_name){
-				system("cls");
-				cout<<setiosflags(ios::right)<<setw(20)<<"Search Books"<<endl<<endl;
-				cout<<left<<setw(20)<<"Book"<<left<<setw(20)<<"Author"<<left<<setw(15)<<"Cost"<<left<<setw(15)<<"No. of Copies"<<endl<<endl;
 				cout<<left<<setw(20)<<book_name<<left<<setw(20)<<author_name<<left<<setw(15)<<cost<<left<<setw(15)<<stock<<endl<<endl;
 				count++;
 				break;
